@@ -13,6 +13,7 @@ oldAge = age + 10;
 birthYear = year - age;
 halfMoney = money / 2;
 add3 = money / 2 + 3;
+
 /****************************
 Main code
 ****************************/
