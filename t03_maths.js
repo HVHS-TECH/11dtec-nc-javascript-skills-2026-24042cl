@@ -1,25 +1,26 @@
 /****************************
 Name of task: Math Equations
 ****************************/
-let num1 = 10;
-let num2 = 5;
-let answer;
 
-console.log("add",     num1 + num2);
-console.log("subtract",     num1 - num2);
-console.log("multiply",     num1 * num2);
-console.log("divide",     num1 / num2);
+//Variables
+let Username = "charles";
+let year = "2026";
+let age = 16;
+let money = 67
+let birthYear;
+let oldAge;
+oldAge = age + 10;
+birthYear = year - age;
+
+
 /****************************
 Main code
 ****************************/
-answer = num1 + num2;
-console.log("add",     answer);
-answer = num1 - num2;
-console.log("subtract",     answer);
-answer = num1 * num2;
-console.log("multiply",     answer);
-answer = num1 / num2;
-console.log("divide",     answer);
+console.log("Hi " + Username + " as of " + year + " you are " + age + " years old. You have " + money + " dollars");
+console.log("You were born in " + birthYear);
+console.log("In 10 years you will be " + oldAge + " years old.");
+console.log("You have " + money + " dollars");
+
 /****************************
 Functions
 ****************************/
