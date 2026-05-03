@@ -22,7 +22,7 @@ Main code
 ****************************/
 
 OUTPUT.innerHTML += ("<p>Hi " + Username + " as of " + year + " you are " + age + " years old. You have " + money + " dollars,</p>");
-OUTPUT.innerHTML += ("<p>You were born in " + birthYear +);
+OUTPUT.innerHTML += ("<p>You were born in " + birthYear +"</p>");
 OUTPUT.innerHTML += ("<p>In 10 years you will be " + oldAge + " years old.</p>");
 OUTPUT.innerHTML += ("<p>You have " + money + " dollars</p>");
 OUTPUT.innerHTML += ("<p>You have spent half of your money, you now have " + halfMoney + " dollars left.</p>");
