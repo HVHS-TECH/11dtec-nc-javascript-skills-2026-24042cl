@@ -1,5 +1,5 @@
 /****************************
-Name of task: JavaScript and HTML
+Name of task: Functions
 ****************************/
 console.log("Running t01_javascriptAndHtml.js")
 
@@ -18,6 +18,7 @@ add3 = money / 2 + 3;
 /****************************
 Main code
 ****************************/
+writeLine()
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 OUTPUT.innerHTML = "<h2>Added by JavaScript.</h2>";
 OUTPUT.innerHTML += "<p>Hi " + Username + " as of " + year + " you are " + age + " years old. You have " + money + " dollars,</p>";
@@ -31,3 +32,7 @@ OUTPUT.innerHTML += "<p>Then you get $3, now you have " + add3 + " dollars.</p>"
 /****************************
 Functions
 ****************************/
+function writeLine(){
+    // add a line on the html page
+    OUTPUT.innerHTML += "<p>Less code matters</p>"
+}
