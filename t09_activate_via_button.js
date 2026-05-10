@@ -48,4 +48,4 @@ function displayWelcome(_name, _age){
 <p>Open the console <code>(Ctrl-shift-i)</code>
 <button onClick="start()">START</button>
 
-<div id="spaceForJavaScript"
+<div id="spaceForJavaScript">
