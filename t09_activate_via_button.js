@@ -14,6 +14,8 @@ oldAge = age + 10;
 birthYear = year - age;
 halfMoney = money / 2;
 add3 = money / 2 + 3;
+let currentYear
+currentYear = 2026
 
 /****************************
 Main code
@@ -46,8 +48,8 @@ function displayWelcome(_name, _age){
     OUTPUT.innerHTML += "<p>You are "+_age+" years old</p>";
 }
 function start() {
-    spaceForJavaScriptOutput.innerHTML
-    spaceForJavaScriptOutput.innerHTML
-    answer = currentYear - userAge
-    spaceForJavaScriptOutput.innerHTML
+    OUTPUT.innerHTML
+    OUTPUT.innerHTML
+    answer = currentYear - age
+    OUTPUT.innerHTML
 }
