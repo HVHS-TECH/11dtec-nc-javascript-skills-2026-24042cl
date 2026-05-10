@@ -46,5 +46,8 @@ function displayWelcome(_name, _age){
     OUTPUT.innerHTML += "<p>You are "+_age+" years old</p>";
 }
 function start() {
-    
+    spaceForJavaScriptOutput.innerHTML
+    spaceForJavaScriptOutput.innerHTML
+    answer = currentYear - userAge
+    spaceForJavaScriptOutput.innerHTML
 }
