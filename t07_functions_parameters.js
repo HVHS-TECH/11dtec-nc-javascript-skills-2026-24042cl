@@ -27,7 +27,7 @@ OUTPUT.innerHTML += "<p>In 10 years you will be " + oldAge + " years old.</p>";
 OUTPUT.innerHTML += "<p>You have " + money + " dollars</p>";
 OUTPUT.innerHTML += "<p>You have spent half of your money, you now have " + halfMoney + " dollars left.</p>";
 OUTPUT.innerHTML += "<p>Then you get $3, now you have " + add3 + " dollars.</p>";
-displayWelcome("Mr bob");
+displayWelcome("charles");
 
 
 /****************************
@@ -40,4 +40,8 @@ function writeLine(){
 }
 function displayWelcome(_name){
     OUTPUT.innerHTML += "<p>Welcome to the page "+_name+"</p>";
+}
+function displayWelcome(_name, _age){
+    OUTPUT.innerHTML += "<p>Welcome to the page "+_name+"</p>";
+    OUTPUT.innerHTML += "<p>You are "+_age+" years old</p>";
 }
