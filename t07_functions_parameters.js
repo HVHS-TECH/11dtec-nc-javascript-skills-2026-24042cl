@@ -1,5 +1,5 @@
 /****************************
-Name of task: Functions
+Name of task: Functions Parameters
 ****************************/
 console.log("Running t01_javascriptAndHtml.js")
 
@@ -32,7 +32,7 @@ OUTPUT.innerHTML += "<p>Then you get $3, now you have " + add3 + " dollars.</p>"
 /****************************
 Functions
 ****************************/
-function writeLine(){
+function displayWelcome(_name){
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
     // add a line on the html page
     OUTPUT.innerHTML += "<p>Less code matters</p>"
