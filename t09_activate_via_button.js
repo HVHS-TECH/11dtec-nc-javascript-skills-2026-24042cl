@@ -20,18 +20,7 @@ currentYear = 2026
 /****************************
 Main code
 ****************************/
-writeLine()
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-OUTPUT.innerHTML = "<h2>Added by JavaScript.</h2>";
-OUTPUT.innerHTML += "<p>Hi " + Username + " as of " + year + " you are " + age + " years old. You have " + money + " dollars,</p>";
-OUTPUT.innerHTML += "<p>You were born in " + birthYear +"</p>";
-OUTPUT.innerHTML += "<p>In 10 years you will be " + oldAge + " years old.</p>";
-OUTPUT.innerHTML += "<p>You have " + money + " dollars</p>";
-OUTPUT.innerHTML += "<p>You have spent half of your money, you now have " + halfMoney + " dollars left.</p>";
-OUTPUT.innerHTML += "<p>Then you get $3, now you have " + add3 + " dollars.</p>";
-displayWelcome("charles" , 16);
-
-
 /****************************
 Functions
 ****************************/
@@ -48,6 +37,15 @@ function displayWelcome(_name, _age){
     OUTPUT.innerHTML += "<p>You are "+_age+" years old</p>";
 }
 function start() {
+    OUTPUT.innerHTML = "<h2>Added by JavaScript.</h2>";
+    writeLine()
+OUTPUT.innerHTML += "<p>Hi " + Username + " as of " + year + " you are " + age + " years old. You have " + money + " dollars,</p>";
+OUTPUT.innerHTML += "<p>You were born in " + birthYear +"</p>";
+OUTPUT.innerHTML += "<p>In 10 years you will be " + oldAge + " years old.</p>";
+OUTPUT.innerHTML += "<p>You have " + money + " dollars</p>";
+OUTPUT.innerHTML += "<p>You have spent half of your money, you now have " + halfMoney + " dollars left.</p>";
+OUTPUT.innerHTML += "<p>Then you get $3, now you have " + add3 + " dollars.</p>";
+displayWelcome("charles" , 16);
     OUTPUT.innerHTML
     OUTPUT.innerHTML
     answer = currentYear - age

@@ -18,8 +18,7 @@ add3 = money / 2 + 3;
 /****************************
 Main code
 ****************************/
-writeLine()
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const OUTPUT = document.getElementById("output");
 OUTPUT.innerHTML = "<h2>Added by JavaScript.</h2>";
 OUTPUT.innerHTML += "<p>Hi " + Username + " as of " + year + " you are " + age + " years old. You have " + money + " dollars,</p>";
 OUTPUT.innerHTML += "<p>You were born in " + birthYear +"</p>";
@@ -34,14 +33,10 @@ displayWelcome("charles" , 16);
 Functions
 ****************************/
 function writeLine(){
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
     // add a line on the html page
     OUTPUT.innerHTML += "<p>Less code matters</p>"
 }
-function displayWelcome(_name){
-    OUTPUT.innerHTML += "<p>Welcome to the page "+_name+"</p>";
-}
-function displayWelcome(_name, _age){
-    OUTPUT.innerHTML += "<p>Welcome to the page "+_name+"</p>";
-    OUTPUT.innerHTML += "<p>You are "+_age+" years old</p>";
+function displayWelcome(Username, age){
+    OUTPUT.innerHTML += "<p>Welcome to the page "+ Username +"</p>";
+    OUTPUT.innerHTML += "<p>You are "+ age +" years old</p>";
 }
