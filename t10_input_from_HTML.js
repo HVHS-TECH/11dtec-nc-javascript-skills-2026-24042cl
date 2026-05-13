@@ -1,5 +1,5 @@
 /****************************
-Name of task: Activate via Button
+Name of task: Input From HTML
 ****************************/
 console.log("Running t01_javascriptAndHtml.js")
 
