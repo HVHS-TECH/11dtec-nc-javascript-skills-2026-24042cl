@@ -20,8 +20,11 @@ currentYear = 2026
 /****************************
 Main code
 ****************************/
-const NAME_FIELD = document.getElementById("nameField");
-let userName = NAME_FIELD.value;
+function getFromInput(){
+ const NAME_FIELD = document.getElementById("nameField");
+ let userName = NAME_FIELD.value;
+ OUTPUT.innerHTML = "<p> Your name is "+userName+"</p>"
+}
 /****************************
 Functions
 ****************************/
