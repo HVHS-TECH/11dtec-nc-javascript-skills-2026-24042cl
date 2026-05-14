@@ -1,5 +1,5 @@
 /****************************
-Name of task: Input From HTML
+Name of task: Data Types
 ****************************/
 console.log("Running t01_javascriptAndHtml.js")
 
