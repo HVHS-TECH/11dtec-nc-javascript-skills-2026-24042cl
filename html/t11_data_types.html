@@ -20,10 +20,11 @@
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
   <form onsubmit="return false;">
     <label for="formName">Name:</label>
-    <input type = "text" id="nameField">
+    <input type = "text" id="nameField" name="formName" placeholder="Name">
 
     <label for="formName">Age:</label>
     <input type = "text" id="ageField">
+    <input type = "text" id="nameField" name="formName" placeholder="Age">
 
     <input type = "submit" onClick=getFormInput()>
 </form>
