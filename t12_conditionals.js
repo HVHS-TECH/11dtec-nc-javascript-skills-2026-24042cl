@@ -27,4 +27,12 @@ function getFormInput(){
  OUTPUT.innerHTML += "<p> You have "+age+" dollars"+"</p>"
 }
 
-if (age < 20)
+if (age < 20){
+    console.log("prolly too young yo")
+}
+if (age >= 20){
+    console.log("unc")
+}
+if (age == 20){
+    console.log("this is good")
+}
