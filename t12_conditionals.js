@@ -21,7 +21,12 @@ function getFormInput(){
  const AGE_FIELD = document.getElementById("ageField");
  let age = AGE_FIELD.value;
  OUTPUT.innerHTML += "<p> You are "+age+" years old"+"</p>"
- if (age > 20){
+ 
+ const MONEY_FIELD = document.getElementById("moneyField");
+ let money = MONEY_FIELD.value;
+ OUTPUT.innerHTML += "<p> You have "+age+" dollars"+"</p>"
+}
+if (age > 20){
     console.log("prolly too young yo")
 }
 if (age < 20){
@@ -30,9 +35,3 @@ if (age < 20){
 if (age == 20){
     console.log("this is good")
 }
- 
- const MONEY_FIELD = document.getElementById("moneyField");
- let money = MONEY_FIELD.value;
- OUTPUT.innerHTML += "<p> You have "+age+" dollars"+"</p>"
-}
-
