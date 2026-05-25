@@ -26,3 +26,5 @@ function getFormInput(){
  let money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+age+" dollars"+"</p>"
 }
+
+if (age < 20)
