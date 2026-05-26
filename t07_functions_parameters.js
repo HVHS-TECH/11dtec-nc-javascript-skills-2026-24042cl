@@ -28,7 +28,6 @@ OUTPUT.innerHTML += "<p>You have spent half of your money, you now have " + half
 OUTPUT.innerHTML += "<p>Then you get $3, now you have " + add3 + " dollars.</p>";
 displayWelcome(4 , 3 , 2.50);
 
-
 /****************************
 Functions
 ****************************/
