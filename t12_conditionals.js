@@ -28,13 +28,14 @@ age = AGE_FIELD.value;
  const MONEY_FIELD = document.getElementById("moneyField");
 money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
-}
-if (age > 20){
+ if (age < 20){
     console.log("prolly too young yo")
 }
-if (age < 20){
+if (age > 20){
     console.log("unc")
 }
 if (age == 20){
     console.log("this is good")
 }
+}
+
