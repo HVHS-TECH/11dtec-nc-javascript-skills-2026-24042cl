@@ -24,7 +24,7 @@ function getFormInput(){
  
  const MONEY_FIELD = document.getElementById("moneyField");
  let money = MONEY_FIELD.value;
- OUTPUT.innerHTML += "<p> You have "+age+" dollars"+"</p>"
+ OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
 }
 if (age > 20){
     console.log("prolly too young yo")
