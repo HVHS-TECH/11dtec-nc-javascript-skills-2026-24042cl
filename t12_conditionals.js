@@ -1,5 +1,5 @@
 /****************************
-Name of task: Data Types
+Name of task: Conditions
 ****************************/
 console.log("Running t01_javascriptAndHtml.js")
 
