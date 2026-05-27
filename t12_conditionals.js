@@ -28,7 +28,8 @@ age = AGE_FIELD.value;
  const MONEY_FIELD = document.getElementById("moneyField");
 money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
- 
+ displayWelcome(4 , 3 , 2.50);
+}
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
     OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
