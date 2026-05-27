@@ -28,6 +28,13 @@ age = AGE_FIELD.value;
  const MONEY_FIELD = document.getElementById("moneyField");
 money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
+ 
+function displayWelcome(chocolate, chips, drink){
+    OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
+    OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
+    OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
+
+
  if (age < 20){
     console.log("prolly too young yo")
 }
@@ -37,9 +44,7 @@ if (age > 20){
 if (age == 20){
     console.log("this is good")
 }
+
 }
-function displayWelcome(chocolate, chips, drink){
-    OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
-    OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
-    OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
+
 }
