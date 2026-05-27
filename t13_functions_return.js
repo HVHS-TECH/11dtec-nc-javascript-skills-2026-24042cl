@@ -12,7 +12,7 @@ console.log("Running t01_javascriptAndHtml.js")
 Main code
 ****************************/
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
+displayWelcome(4 , 3 , 2.50);
 /****************************
 Functions
 ****************************/
@@ -38,4 +38,8 @@ if (age == 20){
     console.log("this is good")
 }
 }
-
+function displayWelcome(chocolate, chips, drink){
+    OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
+    OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
+    OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
+}
