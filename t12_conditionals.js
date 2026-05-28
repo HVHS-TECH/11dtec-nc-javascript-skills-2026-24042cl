@@ -44,9 +44,13 @@ if (age > 20){
 }
 if (age == 20){
     console.log("this is good")
+    function checkInput(){
+        const input = document.getElementById("userInput").value.trim().toLowerCase();
+    }
+    const OUTPUT = document.getElementById("displayText");
 }
 if (money < 4){
-    
+    OUTPUT.innerHTML = "broke"
 } 
 
 }
