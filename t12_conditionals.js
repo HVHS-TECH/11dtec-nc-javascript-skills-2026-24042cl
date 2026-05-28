@@ -33,6 +33,10 @@ money = MONEY_FIELD.value;
     OUTPUT.innerHTML = "a chocolatebar costs $4. you have "+money+""
 else
     OUTPUT.innerHTML = "you CAN afford a chocolate bar"
+if (money < 4)
+    OUTPUT.innerHTML = "a chocolatebar costs $4. you have "+money+""
+else
+    OUTPUT.innerHTML = "you CAN'T afford a chocolate bar"
 }
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
@@ -49,8 +53,5 @@ if (age > 20){
 if (age == 20){
     console.log("this is good")
 }
-if (money < 4){
-    OUTPUT.innerHTML = "broke"
-} 
 
 }
