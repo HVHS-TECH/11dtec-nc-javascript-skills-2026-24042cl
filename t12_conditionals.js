@@ -46,7 +46,7 @@ if (age == 20){
     console.log("this is good")
 }
 if (money < 4){
-    console.log("broke ass")
+    
 }
 
 }
