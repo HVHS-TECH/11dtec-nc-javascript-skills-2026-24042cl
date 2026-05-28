@@ -29,12 +29,13 @@ age = AGE_FIELD.value;
 money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
  displayWelcome(4 , 3 , 2.50);
- if (money > 4)
-    OUTPUT.innerHTML += "a chocolatebar costs $4. you have "+money+""
+ if (money < 4)
+    OUTPUT.innerHTML += "a chocolatebar costs $4."
 else
     OUTPUT.innerHTML += "you CAN afford a chocolate bar"
- if (money < 4)
-    OUTPUT.innerHTML += "a chocolatebar costs $4. you have "+money+""
+ 
+if (money > 4)
+    OUTPUT.innerHTML += "a chocolatebar costs $4."
 else
     OUTPUT.innerHTML += "you CAN'T afford a chocolate bar"
 }
