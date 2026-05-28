@@ -44,13 +44,14 @@ if (age > 20){
 }
 if (age == 20){
     console.log("this is good")
-    function checkInput(){
-        const input = document.getElementById("userInput").value.trim().toLowerCase();
-    }
-    const OUTPUT = document.getElementById("displayText");
 }
 if (money < 4){
     OUTPUT.innerHTML = "broke"
 } 
+if (money > 4){
+    OUTPUT.innerHTML = "a chocolatebar costs $4. you have "+money+""
+}else{
+    OUTPUT.innerHTML = "you CAN afford a chocolate bar"
+}
 
 }
