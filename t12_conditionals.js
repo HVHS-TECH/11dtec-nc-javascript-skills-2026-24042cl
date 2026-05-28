@@ -33,7 +33,7 @@ money = MONEY_FIELD.value;
     OUTPUT.innerHTML = "a chocolatebar costs $4. you have "+money+""
 else
     OUTPUT.innerHTML = "you CAN afford a chocolate bar"
-if (money < 4)
+ if (money < 4)
     OUTPUT.innerHTML = "a chocolatebar costs $4. you have "+money+""
 else
     OUTPUT.innerHTML = "you CAN'T afford a chocolate bar"
