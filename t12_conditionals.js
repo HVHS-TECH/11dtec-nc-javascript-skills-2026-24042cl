@@ -46,7 +46,9 @@ if (age == 20){
     console.log("this is good")
 }
 if (money < 4){
-    
+    console.log("this is good")
+} else {
+    ("A chocolate bar is $4, you have "+money"")
 }
 
 }
