@@ -41,24 +41,18 @@ if (money < 4){
 }else{
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
 }
+function calculateChange(_change){
+        let change = MONEY_FIELD - money;
+        return change;
+        OUTPUT.innerHTML += "<p>Your change is: $" + change.toFixed(2) + "</p>";
+    }
+if (money = 4){
+
 }
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
     OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
     OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
-
-    function calculatePay(_hours){
-        let pay = _hours * 18.80;
-        pay = pay - (pay * 0.105);
-        pay = pay - (pay * 0.04);
-        return pay;
-    }
-let mondayPay = calculatePay(8);
-let tuesdaypay = calculatePay(6);
-
-OUTPUT.innerHTML += "<p>This weeks pay:</p>";
-OUTPUT.innerHTML += "<p>Monday: $" + mondayPay.toFixed(2) + "</p>";
-OUTPUT.innerHTML += "<p>Tuesday: $" + tuesdaypay.toFixed(2) + "</p>";
 
  if (age < 20){
     console.log("prolly too young yo")
