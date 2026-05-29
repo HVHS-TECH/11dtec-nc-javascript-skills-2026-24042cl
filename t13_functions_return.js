@@ -46,7 +46,6 @@ function calculateChange(_change){
         return change;
         OUTPUT.innerHTML += "<p>Your change is: $" + change.toFixed(2) + "</p>";
     }
-if (money = 4){
 
 }
 function displayWelcome(chocolate, chips, drink){
