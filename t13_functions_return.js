@@ -47,13 +47,18 @@ function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
     OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
 
-    funtion calculatePay(_hours){
+    function calculatePay(_hours){
         let pay = _hours * 18.80;
         pay = pay - (pay * 0.105);
         pay = pay - (pay * 0.04);
         return pay;
     }
+let mondayPay = calculatePay(8);
+let tuesdaypay = calculatePay(6);
 
+OUTPUT.innerHTML += "<p>This weeks pay:</p>";
+OUTPUT.innerHTML += "<p>Monday: $" + mondayPay.toFixed(2) + "</p>";
+OUTPUT.innerHTML += "<p>Tuesday: $" + tuesdaypay.toFixed(2) + "</p>";
 
  if (age < 20){
     console.log("prolly too young yo")
