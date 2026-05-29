@@ -29,6 +29,7 @@ age = AGE_FIELD.value;
 money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
  displayWelcome(4 , 3 , 2.50);
+ 
  if (money > 4){
     OUTPUT.innerHTML += "<p>a chocolate bar costs $4.</p>"
  }else{
