@@ -42,8 +42,10 @@ if (money < 4){
 }else{
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
 }
-if (change = moneyField.value - money){
+if (change = moneyField.value - money; change >= 0 && money < 4){
     OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
+}else{
+    OUTPUT.innerHTML += "<p>You don't have enough money for a chocolate bar.</p>"
 }
 }
 function displayWelcome(chocolate, chips, drink){
