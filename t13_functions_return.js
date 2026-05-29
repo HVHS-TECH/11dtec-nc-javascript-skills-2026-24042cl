@@ -6,7 +6,8 @@ console.log("Running t01_javascriptAndHtml.js")
 //Variables
  let userName
  let age
- let money 
+ let money
+ let change
 
 /****************************
 Main code
@@ -42,9 +43,10 @@ if (money < 4){
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
 }
 function calculateChange(_change){
-        let change = MONEY_FIELD - money;
-        return change;
-        OUTPUT.innerHTML += "<p>Your change is: $" + change.toFixed(2) + "</p>";
+        change = MONEY_FIELD - money;
+        const CHANGE_FIELD = document.getElementById("changeField");
+        CHANGE_FIELD.value = change;
+        OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
     }
 
 }
