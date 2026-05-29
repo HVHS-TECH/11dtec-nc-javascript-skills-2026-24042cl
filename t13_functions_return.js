@@ -7,6 +7,7 @@ console.log("Running t01_javascriptAndHtml.js")
  let userName
  let age
  let money 
+ let change = calculateChange(4,money)
 
 /****************************
 Main code
@@ -40,6 +41,9 @@ if (money < 4){
     OUTPUT.innerHTML += "<p>a chocolate bar costs $4.</p>"
 }else{
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
+}
+if (change = moneyField.value - money){
+    OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 }
 }
 function displayWelcome(chocolate, chips, drink){
