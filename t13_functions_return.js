@@ -6,8 +6,7 @@ console.log("Running t01_javascriptAndHtml.js")
 //Variables
  let userName
  let age
- let money
- let change
+ let money 
 
 /****************************
 Main code
@@ -28,7 +27,6 @@ age = AGE_FIELD.value;
  
  const MONEY_FIELD = document.getElementById("moneyField");
 money = MONEY_FIELD.value;
- change = money - 4;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
  displayWelcome(4 , 3 , 2.50);
  
@@ -43,8 +41,6 @@ if (money < 4){
 }else{
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
 }
-if (money > 4){
-    OUTPUT.innerHTML += "<p>You can buy a chocolate bar and have $"+change+" left over.</p>"
 }
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
