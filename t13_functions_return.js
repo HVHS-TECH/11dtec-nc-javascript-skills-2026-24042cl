@@ -7,7 +7,6 @@ console.log("Running t01_javascriptAndHtml.js")
  let userName
  let age
  let money 
- let change = calculateChange(4,money)
 
 /****************************
 Main code
@@ -42,16 +41,6 @@ if (money < 4){
 }else{
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
 }
-function calculatePay(_hours){
-    let pay = _hours * 15;
-    pay = pay - (pay*0.105);
-    pay = pay - (pay*0.12);
-    pay = pay + 10;
-    return pay;
-    let mondayPay = calculatePay(8);
-    let tuesdayPay = calculatePay(6);
-    OUTPUT.innerHTML += "<p>Monday Pay: $"+mondayPay+"</p>";
-    OUTPUT.innerHTML += "<p>Tuesday Pay: $"+tuesdayPay+"</p>";
 }
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
