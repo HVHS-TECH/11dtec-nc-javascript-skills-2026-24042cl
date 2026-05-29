@@ -47,6 +47,13 @@ function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
     OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
 
+    funtion calculatePay(_hours){
+        let pay = _hours * 18.80;
+        pay = pay - (pay * 0.105);
+        pay = pay - (pay * 0.04);
+        return pay;
+    }
+
 
  if (age < 20){
     console.log("prolly too young yo")
