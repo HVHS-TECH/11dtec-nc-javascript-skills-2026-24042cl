@@ -42,11 +42,8 @@ if (money < 4){
 }else{
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
 }
-const CHANGE_OUTPUT = document.getElementById("changeOutput");
-CHANGE_OUTPUT.innerHTML = "<p> Your change is $"+change+"</p>"
-function calculateChange(cost, money){
-    return money - cost;
-}
+const CHANGE_FIELD = document.getElementById("changeField");
+CHANGE_FIELD.value = change;
 }
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
