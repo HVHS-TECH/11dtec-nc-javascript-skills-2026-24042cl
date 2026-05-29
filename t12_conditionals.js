@@ -29,15 +29,17 @@ age = AGE_FIELD.value;
 money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
  displayWelcome(4 , 3 , 2.50);
- if (money < 4)
-    OUTPUT.innerHTML += "a chocolatebar costs $4."
-else
-    OUTPUT.innerHTML += "you CAN afford a chocolate bar"
+ if (money > 4){
+    OUTPUT.innerHTML += "<p>a chocolate bar costs $4.</p>"
+ }else{
+    OUTPUT.innerHTML += "<p>you CAN'T afford a chocolate bar.</p>"
+ }
  
-if (money > 4)
-    OUTPUT.innerHTML += "a chocolatebar costs $4."
-else
-    OUTPUT.innerHTML += "you CAN'T afford a chocolate bar"
+if (money < 4){
+    OUTPUT.innerHTML += "<p>a chocolate bar costs $4.</p>"
+}else{
+    OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
+}
 }
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
