@@ -43,7 +43,7 @@ if (money < 4){
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
 }
 const CHANGE_FIELD = document.getElementById("changeField");
- change = MONEY_FIELD.value - money;
+ change = CHANGE_FIELD.value - money;
  CHANGE_FIELD.value = change;
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 
