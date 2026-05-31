@@ -46,8 +46,7 @@ const CHANGE_FIELD = document.getElementById("changeField");
  change = money - 4;
  CHANGE_FIELD.value = change;
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
-
-}
+} 
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
     OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
