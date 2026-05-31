@@ -48,6 +48,14 @@ const CHANGE_FIELD = document.getElementById("changeField");
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 
  const CHOCOLATE_FIELD = document.getElementById("chocolateField");
+ 
+ let shoppingList = ["Chocolate", "Chips", "Drink"];
+
+ let choice = SHOPPING_FIELD.value;
+
+ OUTPUT.innerHTML += "<p>"+shoppingList[choice]+"</p>"
+ 
+ const CHOCOLATE_FIELD = document.getElementById("chocolateField");
  let chocolateRating = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 
  let choice = CHOCOLATE_FIELD.value;
