@@ -55,7 +55,7 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
  OUTPUT.innerHTML += "<p>"+shoppingList[choice]+"</p>"
  for(let i=0; i<shoppingList.length; i++){
-    OUTPUT.innerHTML += "<p>"+shoppingList[i]+"</p>"
+    OUTPUT.innerHTML += "<p>Item " + i + ": "+shoppingList[i]+"</p>"
  }
  
  const CHOCOLATE_FIELD = document.getElementById("chocolateField");
