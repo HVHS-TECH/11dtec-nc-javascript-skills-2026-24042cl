@@ -16,16 +16,31 @@
 **************************************************************-->
 
 <body>
-  <h1>T14-arrays part 1</h1>
+  <h1>T14-arrays 1</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+  <form onsubmit="return false;">
+    <label for="formName">Name:</label>
+    <input type = "text" id="nameField" name="formName" placeholder="Name">
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+    <label for="formName">Age:</label>
+    <input type = "text" id="ageField" name="formName" placeholder="Age">
+    
+    <label for="formName">Pocket Money:</label>
+    <input type = "text" id="moneyField" name="formName" placeholder="Pocket Money">
+    <input type = "submit" onClick=getFormInput()>
+    <label id="changeField">
+
+      <label for="formName">On a scale of 0-3, how much do you like chocolate?</label>
+    <input type = "text" id="chocolateField" name="formName" placeholder="0-3">
+</form>
+
 
   <div id="spaceForJavaScriptOutput">
 
-    The output of your script will go here.
+  
 
   </div>
+
 
 
   <script src="../t14_arrays_1.js"></script>

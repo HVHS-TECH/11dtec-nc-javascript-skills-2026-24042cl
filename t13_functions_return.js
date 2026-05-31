@@ -1,5 +1,5 @@
 /****************************
-Name of task: Conditions
+Name of task: Functions and Return
 ****************************/
 console.log("Running t01_javascriptAndHtml.js")
 
