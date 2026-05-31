@@ -11,7 +11,6 @@ console.log("hello boi");
 Main code
 ****************************/
 const container = document.getElementById("spaceForJavaScriptOutput");
-<script>
   function getFormInput(){
     let bottles = parseInt(document.getElementById("bottleField").value);
     let song = "";
@@ -28,7 +27,6 @@ const container = document.getElementById("spaceForJavaScriptOutput");
     song += "No more bottles of milk on the wall! No more bottles of milk! Go to the store and buy some more... " + bottles + " bottles of milk on the wall!";
     container.innerHTML = "<pre>" + song + "</pre>";
   }
-</script>
 
 
 /****************************
