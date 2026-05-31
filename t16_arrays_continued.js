@@ -47,29 +47,6 @@ const CHANGE_FIELD = document.getElementById("changeField");
  CHANGE_FIELD.value = change;
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 }
-let shoppingList = [];
-
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
-function addItem() {
-    let item = document.getElementById("itemField").value;
-
-    shoppingList.push(item);
-
-    OUTPUT.innerHTML = "You have added " + item + " to the list";
-
-    document.getElementById("itemField").value = "";
-}
-
-function showList() {
-    let message = "These are the items on your shopping list:<br>";
-
-    for (let i = 0; i < shoppingList.length; i++) {
-        message += (i + 1) + ". " + shoppingList[i] + "<br>";
-    }
-
-    OUTPUT.innerHTML = message;
-}
  
  const CHOCOLATE_FIELD = document.getElementById("chocolateField");{
  let chocolateRating = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
