@@ -1,5 +1,5 @@
 /****************************
-Name of task: Arrays continued
+Name of task: Arrays 1
 ****************************/
 console.log("Running t01_javascriptAndHtml.js")
 
@@ -46,9 +46,8 @@ const CHANGE_FIELD = document.getElementById("changeField");
  change = money - 4;
  CHANGE_FIELD.value = change;
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
-}
- 
- const CHOCOLATE_FIELD = document.getElementById("chocolateField");{
+
+ const CHOCOLATE_FIELD = document.getElementById("chocolateField");
  let chocolateRating = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 
  let choice = CHOCOLATE_FIELD.value;
