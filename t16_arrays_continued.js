@@ -46,19 +46,32 @@ const CHANGE_FIELD = document.getElementById("changeField");
  change = money - 4;
  CHANGE_FIELD.value = change;
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
+}
+let shoppingList = [];
 
- const CHOCOLATE_FIELD = document.getElementById("chocolateField");
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+function addItem() {
+    let item = document.getElementById("itemField").value;
+
+    shoppingList.push(item);
+
+    OUTPUT.innerHTML = "You have added " + item + " to the list";
+
+    document.getElementById("itemField").value = "";
+}
+
+function showList() {
+    let message = "These are the items on your shopping list:<br>";
+
+    for (let i = 0; i < shoppingList.length; i++) {
+        message += (i + 1) + ". " + shoppingList[i] + "<br>";
+    }
+
+    OUTPUT.innerHTML = message;
+}
  
- let shoppingList = ["Chocolate", "Chips", "Drink"];
-
- let choice = SHOPPING_FIELD.value;
-
- OUTPUT.innerHTML += "<p>"+shoppingList[choice]+"</p>"
- for(let i=0; i<shoppingList.length; i++){
-    OUTPUT.innerHTML += "<p>"+shoppingList[i]+"</p>"
- }
- 
- const CHOCOLATE_FIELD = document.getElementById("chocolateField");
+ const CHOCOLATE_FIELD = document.getElementById("chocolateField");{
  let chocolateRating = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 
  let choice = CHOCOLATE_FIELD.value;
