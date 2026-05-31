@@ -11,10 +11,16 @@ console.log("hello boi");
 Main code
 ****************************/
 const container = document.getElementById("spaceForJavaScriptOutput");
+<scipt>
+  function singsong(){
+    let bottles = phraseInt(document.getElementById("bottleField").value);
+    let song = "";
 
-
-
-
+    for (let i = bottles; i > 0; i--){
+      if {i > 1} {
+        song += i + " bottles of milk on the wall! " + i + " bottles of milk! 
+        Take one down, pass it around... " + (i-1) + " bottles of milk on the wall!\n";
+      } else {
 
 
 /****************************
