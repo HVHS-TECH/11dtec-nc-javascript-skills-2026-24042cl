@@ -11,7 +11,6 @@ console.log("hello boi");
 Main code
 ****************************/
 const container = document.getElementById("spaceForJavaScriptOutput");
-let output = "";
 
 for (let i = 99; i >= 0; i--) {
   let currentBottles = i === 0 ? "No more" : i;
