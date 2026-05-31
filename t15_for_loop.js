@@ -26,8 +26,6 @@ for (let i = 99; i >= 0; i--) {
   OUTPUT.innerHTML += `Take one down, pass it around, ${nextBottles} ${nextBottleWord} of milk on the wall.</p><br><br>`;
 }
 
-container.innerHTML = output;
-
 
 
 
