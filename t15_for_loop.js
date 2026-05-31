@@ -26,7 +26,6 @@ const container = document.getElementById("spaceForJavaScriptOutput");
       }
     }
     song += "No more bottles of milk on the wall! No more bottles of milk! Go to the store and buy some more... " + bottles + " bottles of milk on the wall!";
-    document.getElementById("spaceForJavaScriptOutput").innerHTML = song;
     container.innerHTML = "<pre>" + song + "</pre>";
   }
 </script>
