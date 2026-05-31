@@ -19,8 +19,15 @@ const container = document.getElementById("spaceForJavaScriptOutput");
     for (let i = bottles; i > 0; i--){
       if {i > 1} {
         song += i + " bottles of milk on the wall! " + i + " bottles of milk! 
-        Take one down, pass it around... " + (i-1) + " bottles of milk on the wall!\n";
+        song += "Take one down, pass it around... " + (i-1) + " bottles of milk on the wall!\n";
       } else {
+        song += "1 bottle of milk on the wall! 1 bottle of milk!"
+        song += "Take one down, pass it around... No more bottles of milk on the wall!\n";
+      }
+    }
+    container.innerHTML = "<pre>" + song + "</pre>";
+  }
+</script>
 
 
 /****************************
