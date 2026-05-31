@@ -12,7 +12,7 @@ Main code
 ****************************/
 const container = document.getElementById("spaceForJavaScriptOutput");
 <script>
-  function singsong(){
+  function getFormInput(){
     let bottles = parseInt(document.getElementById("bottleField").value);
     let song = "";
 
