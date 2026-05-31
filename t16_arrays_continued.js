@@ -54,6 +54,9 @@ const CHANGE_FIELD = document.getElementById("changeField");
  let choice = SHOPPING_FIELD.value;
 
  OUTPUT.innerHTML += "<p>"+shoppingList[choice]+"</p>"
+ for(let i=0; i<shoppingList.length; i++){
+    OUTPUT.innerHTML += "<p>"+shoppingList[i]+"</p>"
+ }
  
  const CHOCOLATE_FIELD = document.getElementById("chocolateField");
  let chocolateRating = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
