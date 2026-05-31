@@ -47,7 +47,9 @@ const CHANGE_FIELD = document.getElementById("changeField");
  CHANGE_FIELD.value = change;
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 
- 
+ let chocolateRating = [0, 1, 2, 3];
+ let choice = CHOCOLATE_FIELD.value;
+ OUTpUT.innerHTML += "<p>You rated chocolate a "+chocolateRating[choice]+"</p>"
 } 
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
