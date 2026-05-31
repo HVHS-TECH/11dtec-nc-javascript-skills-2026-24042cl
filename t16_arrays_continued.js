@@ -8,7 +8,7 @@ console.log("Running t01_javascriptAndHtml.js")
  let age
  let money
  let change
-
+let shoppingList = [];
 /****************************
 Main code
 ****************************/
@@ -57,6 +57,20 @@ const CHANGE_FIELD = document.getElementById("changeField");
  for(let i=0; i<shoppingList.length; i++){
     OUTPUT.innerHTML += "<p>Item " + i + ": "+shoppingList[i]+"</p>"
  }
+ function addItem(){
+    const ITEM_FIELD = document.getElementById("itemField");
+    shopping List.push(ITEM_FIELD.value);
+
+    OUTPUT.innerHTML += "<p>Added "+ITEM_FIELD.value+" to the shopping list.</p>"
+    document.getElementById("itemField").value = "";
+    
+ }
+function showList(){
+    OUTPUT.innerHTML += "<p>Shopping List:</p>";
+
+    for(let i=0; i<shoppingList.length; i++){
+        OUTPUT.innerHTML += "<p>Item " + i + ": "+shoppingList[i]+"</p>"
+    }
  
  const CHOCOLATE_FIELD = document.getElementById("chocolateField");
  let chocolateRating = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
