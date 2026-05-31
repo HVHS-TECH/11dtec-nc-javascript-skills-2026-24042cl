@@ -1,5 +1,5 @@
 /****************************
-Name of task: Intro to Javascript
+Name of task: For Loop
 ****************************/
 console.log("Running t01_introduction.js")
 console.log("hello boi");
@@ -10,7 +10,7 @@ console.log("hello boi");
 Main code
 ****************************/
 for (let i = 0; i < 10; i++){
-    OUTPUT.innerHTML += "<p>i is currently "+i+"</p>"
+    OUTPUT.innerHTML += "<p>"99 bottles of <milk> on the wall "+i+"</p>"
 }
 
 
