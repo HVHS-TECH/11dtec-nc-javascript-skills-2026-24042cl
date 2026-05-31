@@ -30,11 +30,6 @@ age = AGE_FIELD.value;
 money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
  displayWelcome(4 , 3 , 2.50);
- 
- const CHANGE_FIELD = document.getElementById("changeField");
- change = MONEY_FIELD.value - money;
- CHANGE_FIELD.value = change;
- OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 
  if (money > 4){
     OUTPUT.innerHTML += "<p>a chocolate bar costs $4.</p>"
@@ -47,7 +42,10 @@ if (money < 4){
 }else{
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
 }
-
+const CHANGE_FIELD = document.getElementById("changeField");
+ change = MONEY_FIELD.value - money;
+ CHANGE_FIELD.value = change;
+ OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 
 }
 function displayWelcome(chocolate, chips, drink){
