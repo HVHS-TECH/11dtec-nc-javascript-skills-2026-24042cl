@@ -19,6 +19,11 @@ for (let i = 99; i >= 0; i--) {
   let bottleWord = i === 1 ? "bottle" : "bottles";
   let nextBottleWord = (i - 1) === 1 ? "bottle" : "bottles";
 
+  const BOTTLE_FIELD = document.getElementById("bottleField");
+  let bottles = parseInt(BOTTLE_FIELD.value) || 99;
+
+  OUTPUT.innerHTML += `<p>${currentBottles} ${bottleWord} of milk on the wall, ${currentBottles} ${bottleWord} of milk.<br>`;
+  OUTPUT.innerHTML += `Take one down, pass it around, ${nextBottles} ${nextBottleWord} of milk on the wall.</p><br><br>`;
   if (i > 0) {
     output += `${currentBottles} ${bottleWord} of milk on the wall, ${currentBottles} ${bottleWord} of milk.<br>`;
     output += `Take one down, pass it around, ${nextBottles} ${nextBottleWord} of milk on the wall.<br><br>`;
