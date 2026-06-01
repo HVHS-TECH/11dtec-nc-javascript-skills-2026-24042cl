@@ -63,7 +63,7 @@ const CHANGE_FIELD = document.getElementById("changeField");
  OUTPUT.innerHTML += "<p>Your change is $"+change+"</p>"
 
  const CHOCOLATE_FIELD = document.getElementById("chocolateField");
- let chocolateRating = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
+ let chocolateRating = ["You loathe chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 
  let choice = CHOCOLATE_FIELD.value;
 
