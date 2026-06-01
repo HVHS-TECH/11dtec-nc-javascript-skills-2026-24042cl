@@ -8,7 +8,7 @@ console.log("Running t01_javascriptAndHtml.js")
  let age
  let money
  let change
- let shoppingCart = ["chocolate test", "drink test"];
+ let shoppingCart = [""];
 let chocolate
 let chips
 let drink
@@ -76,7 +76,7 @@ shoppingCart.push(drink);
 }
 function showCart(){
 for (let i=0; i < shoppingCart.length; i++){
-    OUTPUT.innerHTML = +shoppingCart[i]+"<br>"
+    OUTPUT.innerHTML += "<br>"+shoppingCart[i]+"<br>"
 }
 }
 
