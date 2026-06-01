@@ -26,6 +26,26 @@ function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
     OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
 }
+function addChocolate(){
+shoppingCart.push("chocolate");
+    OUTPUT.innerHTML += "added chocolate<br>";
+}
+function addChips(){
+shoppingCart.push("chips");
+    OUTPUT.innerHTML += "added chips<br>";
+}
+function addDrink(){
+shoppingCart.push("drink");
+    OUTPUT.innerHTML += "added drink<br>";
+}
+function showCart(){
+
+    OUTPUT.innerHTML += "Cart Contents:<br>";
+
+    for (let i=0; i < shoppingCart.length; i++){
+    OUTPUT.innerHTML += shoppingCart[i]+"<br>";
+  }
+}
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
     if (NAME_FIELD.checkValidity()=== false)  {
@@ -95,26 +115,5 @@ if (age > 20){
 }
 if (age == 20){
     console.log("this is good")
-}
-
-function addChocolate(){
-shoppingCart.push("chocolate");
-    OUTPUT.innerHTML += "added chocolate<br>";
-}
-function addChips(){
-shoppingCart.push("chips");
-    OUTPUT.innerHTML += "added chips<br>";
-}
-function addDrink(){
-shoppingCart.push("drink");
-    OUTPUT.innerHTML += "added drink<br>";
-}
-function showCart(){
-
-    OUTPUT.innerHTML += "Cart Contents:<br>";
-
-    for (let i=0; i < shoppingCart.length; i++){
-    OUTPUT.innerHTML += shoppingCart[i]+"<br>";
-  }
 }
 }
