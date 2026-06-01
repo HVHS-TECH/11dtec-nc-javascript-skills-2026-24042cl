@@ -58,7 +58,6 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
 
 }
-let shoppingCart =[""];
 let shoppingCart = ["chocolate test", "drink test"];
 let chocolate
 let chips
