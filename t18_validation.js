@@ -17,7 +17,6 @@ let drink
 if (insert.checkValidity()=== false)  {
     OUTPUT.innerHTML = "please fill out the form correctly"
 }else{
-    
 }
 
 /****************************
