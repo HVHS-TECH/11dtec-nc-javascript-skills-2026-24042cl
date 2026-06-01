@@ -8,6 +8,10 @@ console.log("Running t01_javascriptAndHtml.js")
  let age
  let money
  let change
+ let shoppingCart = ["chocolate test", "drink test"];
+let chocolate
+let chips
+let drink
 
 /****************************
 Main code
@@ -58,10 +62,6 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
 
 }
-let shoppingCart = ["chocolate test", "drink test"];
-let chocolate
-let chips
-let drink
 function addChocolate(){
 shoppingCart.push(chocolate);
     OUTPUT.innerHTML += "added chocolate<br>";
