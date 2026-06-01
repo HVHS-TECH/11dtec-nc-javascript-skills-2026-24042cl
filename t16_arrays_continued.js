@@ -75,9 +75,9 @@ shoppingCart.push("drink");
     OUTPUT.innerHTML += "added drink<br>";
 }
 function showCart(){
-for (let i=0; i < shoppingCart.length; i++){
-    OUTPUT.innerHTML += "Cart Contents:<br>"+shoppingCart[i]+"<br>"
-}
+for (let i=0; i < shoppingCart.length; i++)
+    OUTPUT.innerHTML += "Cart Contents:<br>"+shoppingCart[i]+""
+
 }
 
 function displayWelcome(chocolate, chips, drink){
