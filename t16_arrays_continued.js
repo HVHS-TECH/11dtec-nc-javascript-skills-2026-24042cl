@@ -12,6 +12,13 @@ console.log("Running t01_javascriptAndHtml.js")
 let chocolate
 let chips
 let drink
+<form id="welcomeForm" onsubmit="return false;">
+
+</form>
+
+if (insert.checkValidity()=== false)  {
+    OUTPUT.innerHTML = "please fill out the form correctly"
+}
 
 /****************************
 Main code
