@@ -117,6 +117,7 @@ shoppingCart.push("drink");
     OUTPUT.innerHTML += "added drink<br>";
 }
 function showCart(){
+}
     OUTPUT.innerHTML += "Cart Contents:<br>";
 for (let i=0; i < shoppingCart.length; i++){
     OUTPUT.innerHTML += shoppingCart[i]+"<br>";
