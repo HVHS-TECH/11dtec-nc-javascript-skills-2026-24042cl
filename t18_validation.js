@@ -13,12 +13,6 @@ let chocolate
 let chips
 let drink
 
-
-if (insert.checkValidity()=== false)  {
-    OUTPUT.innerHTML = "please fill out the form correctly"
-}else{
-}
-
 /****************************
 Main code
 ****************************/
@@ -28,9 +22,13 @@ displayWelcome(4 , 3 , 2.50);
 Functions
 ****************************/
 function getFormInput(){
- const NAME_FIELD = document.getElementById("nameField");
+    if (NAME_FIELD.checkValidity()=== false)  {
+    OUTPUT.innerHTML = "please fill out the form correctly"
+}else{
+const NAME_FIELD = document.getElementById("nameField");
 userName = NAME_FIELD.value;
  OUTPUT.innerHTML = "<p> Your name is "+userName+"</p>"
+}
  
  const AGE_FIELD = document.getElementById("ageField");
 age = AGE_FIELD.value;
