@@ -38,8 +38,12 @@ age = AGE_FIELD.value;
 }
  
  const MONEY_FIELD = document.getElementById("moneyField");
+ if (MONEY_FIELD.checkValidity()=== false)  {
+    OUTPUT.innerHTML = "please fill out the form correctly"
+}else{
 money = MONEY_FIELD.value;
  OUTPUT.innerHTML += "<p> You have "+money+" dollars"+"</p>"
+}
  displayWelcome(4 , 3 , 2.50);
 
  if (money > 4){
