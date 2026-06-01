@@ -31,7 +31,7 @@ userName = NAME_FIELD.value;
 }
 const AGE_FIELD = document.getElementById("ageField");
 if (AGE_FIELD.value < 0){
-    OUTPUT.innerHTML = "how are you alive??"
+    OUTPUT.innerHTML = "<p>how are you alive??</p>"
 } else if (AGE_FIELD.value > 100){
     OUTPUT.innerHTML = "you are probably not alive anymore??"
 } else if (AGE_FIELD.value == 0){
@@ -64,16 +64,12 @@ money = MONEY_FIELD.value;
 }
  displayWelcome(4 , 3 , 2.50);
 
- if (money > 4){
     OUTPUT.innerHTML += "<p>a chocolate bar costs $4.</p>"
- }else{
-    OUTPUT.innerHTML += "<p>you CAN'T afford a chocolate bar.</p>"
- }
  
-if (money < 4){
-    OUTPUT.innerHTML += "<p>a chocolate bar costs $4.</p>"
-}else{
+if (money >= 4){
     OUTPUT.innerHTML += "<p>you CAN afford a chocolate bar.</p>"
+}else{
+    OUTPUT.innerHTML += "<p>you CAN'T afford a chocolate bar.</p>"
 }
 const CHANGE_FIELD = document.getElementById("changeField");
  change = money - 4;
