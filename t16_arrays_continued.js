@@ -57,18 +57,23 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
 
 
-} 
+}
+let shoppingCart =[""];
+let shoppingCart = ["chocolate test", "drink test"];
+let chocolate
+let chips
+let drink
 function addChocolate(){
-shoppingcart.push(chocolate);
-    OUTPUT.innerHTML += "added chocolate";
+shoppingCart.push(chocolate);
+    OUTPUT.innerHTML += "added chocolate<br>";
 }
 function addChips(){
-shoppingcart.push(chips);
-    OUTPUT.innerHTML += "added chips";
+shoppingCart.push(chips);
+    OUTPUT.innerHTML += "added chips<br>";
 }
 function addDrink(){
-shoppingcart.push(drink);
-    OUTPUT.innerHTML += "added drink";
+shoppingCart.push(drink);
+    OUTPUT.innerHTML += "added drink<br>";
 }
 function showCart(){
 for (let i=0; i < shoppingCart.length; i++){
@@ -80,8 +85,6 @@ function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
     OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
     OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
-    const SHOPPING_FIELD = document.getElementById("shoppingField");
- let shoppingCart = [];
 
  if (age < 20){
     console.log("prolly too young yo")
