@@ -64,11 +64,11 @@ const CHANGE_FIELD = document.getElementById("changeField");
 }
 
 
-function priceList(chocolate, chips, drink){
+function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
     OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
     OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
- 
+}
 
  if (age < 20){
     console.log("prolly too young yo")
