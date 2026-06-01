@@ -47,7 +47,16 @@ age = AGE_FIELD.value;
 }
  
  const MONEY_FIELD = document.getElementById("moneyField");
- if (MONEY_FIELD.checkValidity()=== false)  {
+if (MONEY_FIELD.value < 0){
+    OUTPUT.innerHTML = "you can't have negative money!!"
+} else if (MONEY_FIELD.value > 1000){
+    OUTPUT.innerHTML = "you are a millionaire!!"
+} else if (MONEY_FIELD.value == 0){
+    OUTPUT.innerHTML = "you are broke!!"
+} else if (MONEY_FIELD.value == 1000){
+    OUTPUT.innerHTML = "congrats on being a millionaire!!"
+}
+if (MONEY_FIELD.checkValidity()=== false)  {
     OUTPUT.innerHTML = "please fill out the form correctly"
 }else{
 money = MONEY_FIELD.value;
@@ -77,11 +86,6 @@ const CHANGE_FIELD = document.getElementById("changeField");
  let choice = CHOCOLATE_FIELD.value;
 
  OUTPUT.innerHTML += "<p>"+chocolateRating[choice]+"</p>"
-
-
-
-
-}
 
 
 function displayWelcome(chocolate, chips, drink){
