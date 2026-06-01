@@ -62,6 +62,25 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
 
 }
+
+
+function displayWelcome(chocolate, chips, drink){
+    OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
+    OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
+    OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
+ 
+
+ if (age < 20){
+    console.log("prolly too young yo")
+}
+if (age > 20){
+    console.log("unc")
+}
+if (age == 20){
+    console.log("this is good")
+}
+
+}
 function addChocolate(){
 shoppingCart.push("chocolate");
     OUTPUT.innerHTML += "added chocolate<br>";
@@ -79,21 +98,4 @@ function showCart(){
 for (let i=0; i < shoppingCart.length; i++){
     OUTPUT.innerHTML += shoppingCart[i]+"<br>";
 }
-}
-
-function displayWelcome(chocolate, chips, drink){
-    OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
-    OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
-    OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
-
- if (age < 20){
-    console.log("prolly too young yo")
-}
-if (age > 20){
-    console.log("unc")
-}
-if (age == 20){
-    console.log("this is good")
-}
-
 }
