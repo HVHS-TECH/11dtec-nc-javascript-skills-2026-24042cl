@@ -59,7 +59,8 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
 } 
 function displayWelcome(added chocolate){
-    OUTPUT.innerHTML = "added chocolate";
+    shoppingcart.push(chocolate);
+    OUTPUT.innerHTML += "added chocolate";
 }
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
