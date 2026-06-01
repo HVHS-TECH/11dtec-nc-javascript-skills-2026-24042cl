@@ -63,20 +63,20 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
 }
 function addChocolate(){
-shoppingCart.push(chocolate);
+shoppingCart.push("chocolate");
     OUTPUT.innerHTML += "added chocolate<br>";
 }
 function addChips(){
-shoppingCart.push(chips);
+shoppingCart.push("chips");
     OUTPUT.innerHTML += "added chips<br>";
 }
 function addDrink(){
-shoppingCart.push(drink);
+shoppingCart.push("drink");
     OUTPUT.innerHTML += "added drink<br>";
 }
 function showCart(){
 for (let i=0; i < shoppingCart.length; i++){
-    OUTPUT.innerHTML += "<br>"+shoppingCart[i]+"<br>"
+    OUTPUT.innerHTML += "Cart Contents:<br>"+shoppingCart[i]+"<br>"
 }
 }
 
