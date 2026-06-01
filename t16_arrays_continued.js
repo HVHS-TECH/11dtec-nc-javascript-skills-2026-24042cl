@@ -80,7 +80,6 @@ if (age == 20){
     console.log("this is good")
 }
 
-}
 function addChocolate(){
 shoppingCart.push("chocolate");
     OUTPUT.innerHTML += "added chocolate<br>";
