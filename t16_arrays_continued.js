@@ -58,10 +58,23 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
 
 } 
-function displayWelcome(added chocolate){
-    shoppingcart.push(chocolate);
+function addChocolate(){
+shoppingcart.push(chocolate);
     OUTPUT.innerHTML += "added chocolate";
 }
+function addChips(){
+shoppingcart.push(chips);
+    OUTPUT.innerHTML += "added chips";
+}
+function addDrink(){
+shoppingcart.push(drink);
+    OUTPUT.innerHTML += "added drink";
+}
+function showCart(){
+shoppingcart.push(chocolate);
+    OUTPUT.innerHTML += "added chocolate";
+}
+
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
     OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
