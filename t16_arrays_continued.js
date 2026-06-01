@@ -56,7 +56,7 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
  const SHOPPING_FIELD = document.getElementById("shoppingField");
  let shoppingCart = [];
- 
+
 } 
 function displayWelcome(chocolate, chips, drink){
     OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
