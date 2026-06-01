@@ -21,6 +21,11 @@ displayWelcome(4 , 3 , 2.50);
 /****************************
 Functions
 ****************************/
+function displayWelcome(chocolate, chips, drink){
+    OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
+    OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
+    OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
+}
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
     if (NAME_FIELD.checkValidity()=== false)  {
@@ -81,12 +86,6 @@ const CHANGE_FIELD = document.getElementById("changeField");
 
  let choice = Number(CHOCOLATE_FIELD.value);
 
-
-function displayWelcome(chocolate, chips, drink){
-    OUTPUT.innerHTML += "<p>Chocolate bar: $"+ chocolate +"</p>";
-    OUTPUT.innerHTML += "<p>Chips: $"+ chips +" </p>";
-    OUTPUT.innerHTML += "<p>Drink: $"+ drink +" </p>";
-}
 
  if (age < 20){
     console.log("prolly too young yo")
