@@ -29,10 +29,13 @@ const NAME_FIELD = document.getElementById("nameField");
 userName = NAME_FIELD.value;
  OUTPUT.innerHTML = "<p> Your name is "+userName+"</p>"
 }
- 
+if (AGE_FIELD.checkValidity()=== false)  {
+    OUTPUT.innerHTML = "please fill out the form correctly"
+}else{
  const AGE_FIELD = document.getElementById("ageField");
 age = AGE_FIELD.value;
  OUTPUT.innerHTML += "<p> You are "+age+" years old"+"</p>"
+}
  
  const MONEY_FIELD = document.getElementById("moneyField");
 money = MONEY_FIELD.value;
